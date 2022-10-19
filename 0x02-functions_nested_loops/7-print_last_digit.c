@@ -1,21 +1,18 @@
-#include "main.h"
+#include <stdio.h>
 /**
- * print_last_digit - prints the last digit
+ * main - prints the last digit
  * @x: number
- * Return: value
+ * Return: Always 0
  */
-int print_last_digit(int x)
+int main(int x)
 {
 	int d;
+	int result;
 
 	d = x % 10;
 	if (d < 0)
-	{
 		d = d * -1;
-	}
-
-	_putchar(d);
-	_putchar(d);
-
-	return (0);
+	result = d;
+	printf("%d%d", d, result);
+	return (d);
 }
