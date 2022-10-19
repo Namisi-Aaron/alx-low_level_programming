@@ -3,6 +3,7 @@
 #include <stdio.h>
 /**
  * main - check if random number is positive
+ * Return: Always 0
  */
 int main(void)
 {
