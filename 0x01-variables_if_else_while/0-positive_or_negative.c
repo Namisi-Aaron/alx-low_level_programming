@@ -1,7 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* positive or negative random numbers */
+/**
+ * main - check if random number is positive
+ */
 int main(void)
 {
 	int n;
