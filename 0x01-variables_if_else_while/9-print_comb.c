@@ -16,10 +16,6 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-		else
-		{
-			putchar(x + '0');
-		}
 	}
 	return (0);
 }
