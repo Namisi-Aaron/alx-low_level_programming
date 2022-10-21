@@ -15,7 +15,10 @@ int main(void)
 			{
 				printf("FizzBuzz ");
 			}
-			printf("Fizz ");
+			else
+			{
+				printf("Fizz ");
+			}
 		}
 		else if (x % 5 == 0)
 		{
@@ -23,7 +26,10 @@ int main(void)
 			{
 				printf("FizzBuzz ");
 			}
-			printf("Buzz ");
+			else
+			{
+				printf("Buzz ");
+			}
 		}
 		else
 		{
