@@ -1,5 +1,5 @@
 #include "main.h"
-**
+/**
  * print_triangle - print triangle
  * @size: size of triangle
  */
