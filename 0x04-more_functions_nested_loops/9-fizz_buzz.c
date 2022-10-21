@@ -8,7 +8,7 @@ int main(void)
 	int x;
 
 	printf("1");
-	for (x = 1 ; x <= 100 ; x++)
+	for (x = 2 ; x <= 100 ; x++)
 	{
 		if (x % 3 == 0)
 		{
