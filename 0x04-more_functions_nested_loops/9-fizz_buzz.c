@@ -7,33 +7,34 @@ int main(void)
 {
 	int x;
 
+	printf("1");
 	for (x = 1 ; x <= 100 ; x++)
 	{
 		if (x % 3 == 0)
 		{
 			if (x % 5 == 0)
 			{
-				printf("FizzBuzz ");
+				printf(" FizzBuzz");
 			}
 			else
 			{
-				printf("Fizz ");
+				printf(" Fizz");
 			}
 		}
 		else if (x % 5 == 0)
 		{
 			if (x % 3 == 0)
 			{
-				printf("FizzBuzz ");
+				printf(" FizzBuzz");
 			}
 			else
 			{
-				printf("Buzz ");
+				printf(" Buzz");
 			}
 		}
 		else
 		{
-			printf("%d ", x);
+			printf(" %d", x);
 		}
 	}
 	putchar('\n');
