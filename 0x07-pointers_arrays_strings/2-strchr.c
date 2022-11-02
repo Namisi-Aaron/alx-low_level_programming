@@ -8,16 +8,17 @@
  */
 char *_strchr(char *s, char c)
 {
-	if  (s == NULL)
+	int x;
+
+	if  (s[x] == NULL)
 	{
 		return (NULL);
 	}
-	for (; *s ; s++)
+	for (x = 0 ; s[x] >= '\0' ; x++)
 	{
-		if (*s == c)
+		if (s[x] == c)
 		{
-			return (s);
+			return (s + x);
 		}
 	}
-	return (NULL);
 }
