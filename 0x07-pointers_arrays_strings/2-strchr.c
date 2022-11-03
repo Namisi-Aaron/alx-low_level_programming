@@ -10,7 +10,7 @@ char *_strchr(char *s, char c)
 {
 	int x;
 
-	if  (s[x] == NULL)
+	if  (s[x] == '\0')
 	{
 		return (NULL);
 	}
