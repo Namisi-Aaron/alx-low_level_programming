@@ -12,17 +12,17 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int a;
+	char x, *y;
 
-	while (*s)
+	for (x = *s ; x != 0 ; s++)
 	{
-		for (a = 0, accept[a] ; a++)
+		for (y = accept ; *y != 0 ; y++)
 		{
-			if (*s == accept[a])
+			if (x == *y)
+			{
 				return (s);
+			}
 		}
-		s++;
 	}
 	return ('\0');
 }
-
