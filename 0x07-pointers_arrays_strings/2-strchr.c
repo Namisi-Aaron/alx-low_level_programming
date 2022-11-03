@@ -12,10 +12,6 @@ char *_strchr(char *s, char c)
 {
 	int x;
 
-	if  (s[x] == '\0')
-	{
-		return (NULL);
-	}
 	for (x = 0 ; s[x] >= '\0' ; x++)
 	{
 		if (s[x] == c)
@@ -23,4 +19,5 @@ char *_strchr(char *s, char c)
 			return (s + x);
 		}
 	}
+	return ('\0');
 }
