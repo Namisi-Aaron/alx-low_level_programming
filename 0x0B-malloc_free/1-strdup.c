@@ -25,3 +25,4 @@ char *_strdup(char *str)
 		a[y] = str[y];
 
 	return (a);
+}
