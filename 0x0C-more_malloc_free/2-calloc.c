@@ -22,6 +22,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (array == NULL)
 		return (NULL);
 
+	x = array;
+
 	for (i = 0; i < (size * nmemb); i++)
 		x[i] = '\0';
 
