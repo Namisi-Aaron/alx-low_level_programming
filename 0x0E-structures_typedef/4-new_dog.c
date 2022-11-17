@@ -39,7 +39,7 @@ char *_strcpy(char *dest, char *src)
  * @owner: owner's name
  * Return: NULL for failure, ptr to new dog on success
  */
-dog_t *new_dog(char *name, float age, har *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 	int x, y;
