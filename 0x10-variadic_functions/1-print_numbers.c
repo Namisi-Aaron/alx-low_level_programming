@@ -18,11 +18,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		int x = va_arg(args, int);
 
-		if (separator == NULL)
-			printf("%d", x);
 		if (i == 0)
 			printf("%d", x);
-		else
+		else if (i != 0 && separator != NULL)
 			printf("%s%d", separator, x);
 	}
 	printf("\n");
