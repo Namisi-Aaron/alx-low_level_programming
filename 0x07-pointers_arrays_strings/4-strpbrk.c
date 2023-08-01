@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _strpbrk - searches a string for any of a set of bytes
  * @s: string to be scanned
@@ -20,5 +19,7 @@ char *_strpbrk(char *s, char *accept)
 		}
 		i++;
 	}
+	if (c == '\0')
+		return (NULL);
 	return (NULL);
 }
