@@ -19,7 +19,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 		i++;
 	}
-	if (c == '\0')
-		return (NULL);
 	return (NULL);
 }
