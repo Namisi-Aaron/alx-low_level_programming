@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _strchr - locates a character in a string
  * @s: pointer to the charaster to be traversed
@@ -21,5 +20,7 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
+	if (c == '\0')
+		return (NULL);
 	return (NULL);
 }
