@@ -8,7 +8,7 @@ int _sqrt_recursion(int n)
 {
 	int sqrt;
 
-	sqrt = _pow_recursion(n, 0.5);
+	sqrt = pow(n, 0.5);
 	if (n % sqrt == 0)
 		return (sqrt);
 	else
