@@ -2,30 +2,27 @@
 #include <stdlib.h>
 /**
  * _strdup - returns a pointer to a new space
- * @str: character pointer
- * Return: NULL if str == NULL, pointer on success
+ * @str: string to be copied to new destination
+ * Return: NULL if str == NULL, pointer to new string on success
  * NULL if memory not sufficient
  */
 char *_strdup(char *str)
 {
-	char *a;
-	int x, y;
+	char *new_str;
+	int i;
 
-	x = 0;
-	y = 0;
-
-	if (str == NULL)
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	new_str = malloc(sizeof(char) * (i + 1));
+	if (new_str == NULL || str == NULL)
 		return (NULL);
-	while (str[x] != '\0')
-		x++;
-
-	a = malloc(sizeof(char) * (x + 1));
-
-	if (a == NULL)
-		return (NULL);
-
-	for (y = 0; str[y]; y++)
-		a[y] = str[y];
-
-	return (a);
+	i = 0;
+	while (str[i] != '\0')
+	{
+		new_str[i] = str[i];
+		i++;
+	}
+	new_str[i] = '\0';
+	return (new_str);
 }
