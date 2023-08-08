@@ -4,7 +4,7 @@
  * alloc_grid - returns pointer to a 2D array of integers
  * @width: no of elements in row
  * @height: no of elements in column
- * Return: NULL on failure || if w or h <= 0
+ * Return: NULL on failure or if width or height <= 0
  * pointer to 2D array
  */
 int **alloc_grid(int width, int height)
@@ -14,9 +14,7 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-
 	grid = malloc(sizeof(int *) * height);
-
 	if (grid == NULL)
 		return (NULL);
 	for (x = 0; x < height; x++)
