@@ -32,7 +32,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			i++;
 		}
 		ptr[i] = '\0';
-		return (ptr);
 	}
 	else if (n < strlen(s2))
 	{
@@ -51,6 +50,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			j++;
 		}
 		ptr[i] = '\0';
-		return (ptr);
 	}
+	return (ptr);
 }
