@@ -2,9 +2,12 @@
 #define MAIN_H
 /**
  * struct dog - the types name
- * @name: the name of the struct dog
- * @age: the dog's age
- * @owner: the owner's name
+ * @name: the first member
+ * @age: the second member
+ * @owner: the third member
+ *
+ * Description: @name is the structs dog's name, @age is the struct's age
+ * 	@owner is the owner's name
  */
 
 typedef struct dog
