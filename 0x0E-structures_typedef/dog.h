@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 /**
- * dog - the types name
+ * struct dog - the types name
  * @name: the name of the struct dog
  * @age: the dog's age
  * @owner: the owner's name
