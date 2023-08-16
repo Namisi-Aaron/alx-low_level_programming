@@ -4,7 +4,7 @@
  * @array: the array of integers to search through
  * @size: the array size
  * @cmp: pointer to the function that searches for an integer
- * return: index of the first element for which cmp does not return 0
+ * Return: index of the first element for which cmp does not return 0
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
