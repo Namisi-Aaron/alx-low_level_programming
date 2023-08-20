@@ -20,6 +20,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	i++;
 	for (; i < n; i++)
 		printf("%s%d", separator, va_arg(args, int));
-	putchar('\0');
+	putchar('\n');
 	va_end(args);
 }
