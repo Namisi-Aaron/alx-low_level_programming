@@ -1,8 +1,8 @@
-#include <math.h>
 #include "main.h"
 #include <string.h>
 
 int _strlen(const char *str);
+int _pow_recursion(int x, int y);
 /**
  * binary_to_uint - converts a binary number to an unsigned int
  * @b: a string containing 1s and 0s
@@ -25,7 +25,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[counter] != '0' && b[counter] != '1')
 			return (0);
 		else if (b[counter] == '1')
-			num += pow(2, power);
+			num += _pow_recursion(2, power);
 		else if (b[counter] == '0')
 			num += 0;
 		power--;
@@ -46,4 +46,21 @@ int _strlen(const char *str)
         while (str[i] != '\0')
                 i++;
         return (i);
+}
+/**
+ * _pow_recursion - returns the value of x ^ y
+ * @x: base
+ * @y: exponent
+ *
+ * Return: -1 if y < 0,
+ * value if y is valid
+ */
+int _pow_recursion(int x, int y)
+{
+	if (y < 0)
+		return (-1);
+	else if (y == 0)
+		return (1);
+	else
+		return (x * _pow_recursion(x, y - 1));
 }
