@@ -1,6 +1,8 @@
 #include <math.h>
 #include "main.h"
 #include <string.h>
+
+int _strlen(const char *str);
 /**
  * binary_to_uint - converts a binary number to an unsigned int
  * @b: a string containing 1s and 0s
@@ -12,7 +14,7 @@ unsigned int binary_to_uint(const char *b)
 	int len, counter, power;
 	unsigned int num;
 
-	len = strlen(b);
+	len = _strlen(b);
 	power = len - 1;
 	num = 0;
 	counter = 0;
@@ -30,4 +32,18 @@ unsigned int binary_to_uint(const char *b)
 		counter++;
 	}
 	return (num);
+}
+/**
+ * _strlen - returns the length of a string
+ * @str: string whose length is to be computed
+ * Return: the length of string str
+ */
+int _strlen(const char *str)
+{
+        int i;
+
+        i = 0;
+        while (str[i] != '\0')
+                i++;
+        return (i);
 }
