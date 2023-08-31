@@ -1,14 +1,16 @@
 #include "main.h"
 #include <string.h>
 
-int _strlen(const char *str);
-int _pow_recursion(int x, int y);
 /**
  * binary_to_uint - converts a binary number to an unsigned int
  * @b: a string containing 1s and 0s
  * Return: the converted number on success,
  * 0 if b is NULL, of b contains characters that are neither 0 or 1
  */
+
+int _strlen(const char *str);
+int _pow_recursion(int x, int y);
+
 unsigned int binary_to_uint(const char *b)
 {
 	int len, counter, power;
