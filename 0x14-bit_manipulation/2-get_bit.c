@@ -27,6 +27,6 @@ int get_bit(unsigned long int n, unsigned int index)
 		ind--;
 	}
 	if (!j)
-		binArray[ind] = 1;
+		binArray[ind] = 0;
 	return (binArray[index]);
 }
