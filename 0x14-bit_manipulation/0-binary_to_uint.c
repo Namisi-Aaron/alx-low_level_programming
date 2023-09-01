@@ -45,12 +45,12 @@ unsigned int binary_to_uint(const char *b)
 	int len, counter, power;
 	unsigned int num;
 
+	if (b == NULL)
+		return (0);
 	len = _strlen(b);
 	power = len - 1;
 	num = 0;
 	counter = 0;
-	if (b == NULL)
-		return (0);
 	while (b[counter] != '\0')
 	{
 		if (b[counter] != '0' && b[counter] != '1')
