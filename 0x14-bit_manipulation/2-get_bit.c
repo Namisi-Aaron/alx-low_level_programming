@@ -28,5 +28,8 @@ int get_bit(unsigned long int n, unsigned int index)
 	}
 	if (!j)
 		binArray[ind] = 0;
-	return (binArray[index]);
+	if (index > 63)
+		return (-1);
+	else
+		return (binArray[index]);
 }
