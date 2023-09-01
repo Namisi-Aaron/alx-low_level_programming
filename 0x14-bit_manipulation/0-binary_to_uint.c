@@ -8,12 +8,12 @@
  */
 int _strlen(const char *str)
 {
-        int i;
+	int i;
 
-        i = 0;
-        while (str[i] != '\0')
-                i++;
-        return (i);
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }
 
 /**
@@ -26,12 +26,12 @@ int _strlen(const char *str)
  */
 int _pow_recursion(int x, int y)
 {
-        if (y < 0)
-                return (-1);
-        else if (y == 0)
-                return (1);
-        else
-                return (x * _pow_recursion(x, y - 1));
+	if (y < 0)
+		return (-1);
+	else if (y == 0)
+		return (1);
+	else
+		return (x * _pow_recursion(x, y - 1));
 }
 
 /**
