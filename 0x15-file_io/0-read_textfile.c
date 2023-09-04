@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stddef.h>
 /**
  * read_textfile - reads a text file and prints it to stdout
  * @filename: pointer to file
@@ -12,7 +10,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t count;
 	FILE *ptr;
-	char str[BUFFSIZE];
 	char c;
 	
 	count = 0;
@@ -26,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		if (feof(ptr))
 			return (count);
 		c = getc(ptr);
-		_putchar(c);		
+		putchar(c);		
 		count++;
 	}
 	fclose(ptr);
