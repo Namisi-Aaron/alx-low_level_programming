@@ -1,22 +1,12 @@
-CC = gcc
-MAIN = main.c
-SCHOOL = school.c
-SRC = $(MAIN) $(SCHOOL)
-OBJ1 = main.o
-OBJ2 = school.o
-OBJ = $(OBJ1) $(OBJ2)
 NAME = school
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
 
-all: school
+all: $(NAME)
 
-school: $(OBJ)
+$(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-main.o: main.c
-	$(CC) -c -o $(OBJ1) $(MAIN)
-
-school.o: school.c
-	$(CC) -c -o $(OBJ2) $(SCHOOL)
-
-clean:
-	rm $(OBJ) school
+%.o: %.c
+	$(CC) -c -o $@ $<
